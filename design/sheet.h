@@ -20,5 +20,5 @@ public:
     void PrintTexts(std::ostream& output) const override;
 
 private:
-	std::vector<std::vector<std::unique_ptr<Cell>>> table_;
+    std::vector<std::vector<std::unique_ptr<Cell>>> table_;
 };
