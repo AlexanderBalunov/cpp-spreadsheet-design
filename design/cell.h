@@ -19,6 +19,8 @@ public:
     std::vector<Position> GetReferencedCells() const override;  
 
 private:
+    bool WillCauseCircularDependency(const Impl& impl_temp);
+
     class Impl;
     class EmptyImpl;
     class TextImpl;
