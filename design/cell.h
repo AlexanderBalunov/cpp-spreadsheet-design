@@ -19,7 +19,8 @@ public:
     std::vector<Position> GetReferencedCells() const override;  
 
 private:
-    bool WillCauseCircularDependency(const Impl& impl_temp);
+    bool WillCauseCircularDependency(const Impl& impl_temp) const;
+    void InvalidateCache();
 
     class Impl;
     class EmptyImpl;
